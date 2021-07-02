@@ -81,7 +81,8 @@ class AppFiler {
     }    
 }
 
-
+// Create an instance of the AppFiler
+const filer = new AppFiler(); 
 
 
 
