@@ -25,7 +25,39 @@ git clone https://github.com/Stringboom/appfiler
 
 ## Use
 
-_Coming soon..._
+To include a file; use the file defined in config. (default: *app.js*)
+Create an instance of the AppFiler class.
+
+```sh
+const filer = new AppFiler(); 
+```
+Include a single file:
+
+```sh
+filer.incl("jquery");
+```
+
+Include multiple files:
+
+```sh
+filer.inclMulti(["jquery", "poper", "custom"]);
+```
+
+Choose a specific folder:
+```sh
+filer.incl("jquery", "externals");
+```
+
+Set type to css or javascript:
+```sh
+filer.incl("bootstrap", undefined, "css");
+```
+
+Add at the bottom of body tag:
+```sh
+filer.incl("custom-ui", undefined, undefined, true);
+```
+Use the same for parameters for multiIncl()
 
 ## Config
 
