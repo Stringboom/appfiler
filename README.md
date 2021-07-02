@@ -23,6 +23,10 @@ Quick and easy installtion with git.
 git clone https://github.com/Stringboom/appfiler
 ```
 
+## Use
+
+_Coming soon..._
+
 ## Config
 
 | Name    | Type    | Description                                       |
@@ -52,7 +56,7 @@ In _dist/appfiler.js_
     }
 ```
 
-Edit the config variable in the class to set the default.
+Edit the config variable in the class to set the default configuration.
 Alternatively, you can set it dynamically:
 
 ```sh
@@ -60,13 +64,14 @@ Alternatively, you can set it dynamically:
     filer.config = {
             binder : ".",
             
-            cabinet: "script",
-            files: "app",
+            cabinet: "scripts",
+            files: "stylingFiles",
     
-            folder : "bin",
-            type : "javascript",
+            folder : "styles",
+            type : "css",
             body : false
         };
+        filer.incl("node_modules.bootstrap.dist.bootstrap");
 ```
 
 or 
@@ -75,10 +80,6 @@ or
 ```sh
     const filer = new AppFiler();
     filer.config.binder  = "+";
+    filer.incl("node_modules+jquery+dist+jquery");
 ```
-
-## Use
-
-_Coming soon..._
-
 
