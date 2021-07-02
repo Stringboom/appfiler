@@ -37,7 +37,7 @@ git clone https://github.com/Stringboom/appfiler
 In _dist/appfiler.js_
 ```sh
     constructor(){
-        this.config = config = {
+        this.config = {
             binder : ".",
             
             cabinet: "script",
@@ -50,6 +50,31 @@ In _dist/appfiler.js_
 
         this.incl(this.config.files, this.config.cabinet);
     }
+```
+
+Edit the config variable in the class to set the default.
+Alternatively, you can set it dynamically:
+
+```sh
+    const filer = new AppFiler();
+    filer.config = {
+            binder : ".",
+            
+            cabinet: "script",
+            files: "app",
+    
+            folder : "bin",
+            type : "javascript",
+            body : false
+        };
+```
+
+or 
+
+
+```sh
+    const filer = new AppFiler();
+    filer.config.binder  = "+";
 ```
 
 ## Use
