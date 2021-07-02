@@ -1,7 +1,6 @@
 # App Filer 📚
-![GitHub](https://img.shields.io/github/license/Stringboom/appfiler)
 
-[![Build Status]](https://github.com/Stringboom/appfiler)
+![GitHub](https://img.shields.io/github/license/Stringboom/appfiler)
 
 App Filer is used to include scripts and stylesheets in HTML5.
 
