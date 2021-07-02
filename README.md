@@ -1,7 +1,7 @@
 # App Filer 📚
-## _Version 1.0 beta_
+## _Version 1.0 build beta_
 
-[![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://github.com/Stringboom/appfiler)
+[![Build Status]](https://github.com/Stringboom/appfiler)
 
 App Filer is used to include scripts and stylesheets in HTML5.
 
