@@ -36,19 +36,20 @@ git clone https://github.com/Stringboom/appfiler
 
 In _dist/appfiler.js_
 ```sh
-const filer = {
-    config : {
-        binder : ".", 
-        
-        cabinet: "script",
-        files: "app",
+    constructor(){
+        this.config = config = {
+            binder : ".",
+            
+            cabinet: "script",
+            files: "app",
+    
+            folder : "bin",
+            type : "javascript",
+            body : false
+        };
 
-        folder : "bin",
-        type : "javascript",
-        body : false
-    },
-    app: ""
-};
+        this.incl(this.config.files, this.config.cabinet);
+    }
 ```
 
 ## Use
