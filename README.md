@@ -25,12 +25,8 @@ git clone https://github.com/Stringboom/appfiler
 
 ## Use
 
-To include a file; use the file defined in config. (default: *app.js*)
-Create an instance of the AppFiler class.
+To include a file; use the file defined in config. (default: *app*)
 
-```sh
-const filer = new AppFiler(); 
-```
 Include a single file:
 
 ```sh
