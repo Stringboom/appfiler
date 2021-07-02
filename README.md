@@ -24,9 +24,35 @@ git clone https://github.com/Stringboom/appfiler
 ```
 ## Config
 
-_Coming soon..._
+In _dist/appfiler.js_
+```sh
+const filer = {
+    config : {
+        binder : ".", 
+        
+        cabinet: "script",
+        files: "app",
+
+        folder : "bin",
+        type : "javascript",
+        body : false
+    },
+    app: ""
+};
+```
+
+| Name    | Type    | Description                                       |
+|---------|---------|---------------------------------------------------|
+| binder  | String  | Define the separator when passing name and folder |
+| cabinet | String  | The folder where the app list file is located     |
+| files   | String  | The name of the app list file                     |
+| folder  | String  | Default parameter for folder                      |
+| type    | String  | Default parameter for type                        |
+| body    | Boolean | Default parameter for body                        |
+
 
 ## Use
 
 _Coming soon..._
+
 
