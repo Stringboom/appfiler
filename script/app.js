@@ -1,13 +1,12 @@
 "use strict"
 
+// Create an instance of the AppFiler
+const filer = new AppFiler(); 
+
 /**
  * Write filing operations here, example:
  *
- * filer.app.incl("jquery");
- *
- * OR
- *
- * const app = filer.app;
- * app.incl("jquery")
+ * filer.incl("jquery");
  * 
  */
+

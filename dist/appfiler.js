@@ -7,30 +7,7 @@
 */
 
 /** 
-* Default variables for filer
-* @variable {string} binder - Recursive Folder Separator
-* @variable {string} cabinet - Folder of main file
-* @variable {string} files - Main File Name were all the operations will be done
-* @variable {string} folder - Location of the folder it is located
-* @variable {string} type - The type of file
-* @variable {boolean} body - Should this file be appended to the body tag
-*/
-const filer = {
-    config : {
-        binder : ".",
-        
-        cabinet: "script",
-        files: "app",
-
-        folder : "bin",
-        type : "javascript",
-        body : false
-    },
-    app: ""
-};
-
-/** 
-* Filer Object
+* Filer Class
 */
 class AppFiler {
     
@@ -39,7 +16,26 @@ class AppFiler {
     * @constructor
     */
     constructor(){
-        this.config = filer.config;
+        this.config = {
+            /** 
+            * Default variables for filer
+            * @variable {string} binder - Recursive Folder Separator
+            * @variable {string} cabinet - Folder of main file
+            * @variable {string} files - Main File Name were all the operations will be done
+            * @variable {string} folder - Location of the folder it is located
+            * @variable {string} type - The type of file
+            * @variable {boolean} body - Should this file be appended to the body tag
+            */
+            binder : ".",
+            
+            cabinet: "script",
+            files: "app",
+    
+            folder : "bin",
+            type : "javascript",
+            body : false
+        };
+
         this.incl(this.config.files, this.config.cabinet);
     }
 
@@ -85,8 +81,6 @@ class AppFiler {
     }    
 }
 
-// Initiating appFiler
-filer.app = new AppFiler(); 
 
 
 
