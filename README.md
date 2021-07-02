@@ -1,5 +1,5 @@
 # App Filer 📚
-## _Version 1.0 build beta_
+![GitHub](https://img.shields.io/github/license/Stringboom/appfiler)
 
 [![Build Status]](https://github.com/Stringboom/appfiler)
 
@@ -31,6 +31,3 @@ _Coming soon..._
 
 _Coming soon..._
 
-# License
-
-Tabler Icons is licensed under the [MIT License](/LICENSE).
