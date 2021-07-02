@@ -33,4 +33,4 @@ _Coming soon..._
 
 # License
 
-Tabler Icons is licensed under the [MIT License](/Stringboom/appfiler/LICENSE).
+Tabler Icons is licensed under the [MIT License](/LICENSE).
