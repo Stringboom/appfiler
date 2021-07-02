@@ -28,7 +28,7 @@ class AppFiler {
             */
             binder : ".",
             
-            cabinet: "script",
+            cabinet: "appfiler.script",
             files: "app",
     
             folder : "bin",
